@@ -81,3 +81,77 @@
 // console.log(parseInt(twelve));//12 (not .2)
 // console.log(parseFloat(twelve));//12 (not px)
 
+//Объект в объекте
+// let options = {
+//     width: 1024,
+//     height: 1024,
+//     name: "test"
+// };
+
+// options.bool = false;
+// options.color = {
+//     border: "black",
+//     bg: "red"
+// };
+
+// console.log(options)
+
+// for(let key in options) {
+//     console.log('Svoistvo ' + key + ' imeet znachenie ' + options[key]) //Выводит весь объект с каждым значением
+// }
+
+// console.log(Object.keys(options).length); // покажет количество ключей в объекте
+
+// let arr = [1, 2, 3, 4, 5];
+
+// arr.forEach(function(item, i, arr) {
+//     console.log(i + ": " + item + " (massiv: " + arr + ")");
+// }) // item - каждый элемент массива, i - номер элемента, arr - сам массив Перебор массива
+
+//     arr[50] = 50 // добавляем элмент в массив на 50 место со значением 50
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]) //Перебрать все значения массива
+// }
+
+// arr.pop() //delete последний элемент массива
+// arr.push("5") // добавляю в конецц массива
+// arr.shift() //delete one element
+// arr.unshift("1") //добавить в начало массива элемент
+
+// console.log(arr);
+
+// let mass = [1, 3, 4, 7, 9];
+
+// for(let key of mass) {
+//     console.log(key) // of - получим значение массива
+// }
+
+// let ans = prompt("", ""),
+//     arr = [];
+// arr = ans.split(','); //Метод split() разбивает объект String на массив строк путём разделения строки указанной подстрокой.
+// console.log(arr);
+
+// let arr = ['a', 'b', 'c', 'drr'],
+//     i = arr.join(', '); //Из массива в строку
+//     // i = arr.sort(); // сортировка в алфавитном порядке 
+// console.log(arr, i)
+
+let arr = ['a', 'b', 'c', 'drr'],
+    i = arr.sort(compareNum); // сортировка цифр по порядке
+    function compareNum (a, b) {
+        return a - b;
+    }
+console.log(arr, i)
+
+
+let solider = {
+    health: 400,
+    armor: 100
+};
+let john = {
+    health: 100
+};
+
+john.__proto__ = solider;
+console.log(john);
+console.log(john.armor) // ООП наследование
