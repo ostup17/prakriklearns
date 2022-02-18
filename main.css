@@ -1,18 +1,39 @@
-div {
-    color: white;
-    font-size: 30px;
-    background-color: green;
-    padding: 30px;
+html {
+    overflow-x: hidden;
+}
+body {
+    width: 100%;
+}
+img.bober {
+    width: 20%;
+}
+.width {
+    width: 96%;
+}
+.justify {
+    text-align: justify;
+}
+td {
     text-align: center;
-    font-weight: bold;
-    cursor: pointer;
 }
 
-li::before {
-    content: '\264B';
+.header {
+    background-color: rgb(102, 229, 238);
+    padding: 10px 0;
 }
-
-div:hover {
-    background-color: black;
-    color: white;
+.profil {
+    background-color: yellow;
+}
+.settings {
+    background-color: green;
+}
+.photo {
+    background-color: blueviolet;
+}
+.a {
+    padding: 20px 0;
+}
+.footer {
+    padding: 10px 0;
+    background-color: gray;
 }
