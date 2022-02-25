@@ -22,7 +22,7 @@ let appData = {
             let question = +prompt('Введите обязательную статью расходов в этом месяце');
             let quesionHow = prompt('Во сколько обойдется?');
         
-            if ( (typeof(question) ) === 'string' && (typeof(question)) != null && (typeof(quesionHow)) != null && a != '' && b != '' && a.length < 50) {
+            if ( (typeof(question) ) === 'string' && (typeof(question)) != null && (typeof(quesionHow)) != null && question != '' && quesionHow != '' && question.length < 50) {
             appData.expenses[question] = quesionHow;
             } else {
                 i--
